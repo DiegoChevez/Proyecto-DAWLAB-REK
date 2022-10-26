@@ -1,280 +1,295 @@
-
-  /* Font */
+/* Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@700;900&display=swap');
 
-  /* formulario */
+/* formulario */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #04BF9D;
-    border-radius: 4px;
-    resize: vertical;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-  }
+  box-sizing: border-box;
+}
 
-  input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #04BF9D;
-    border-radius: 4px;
-    resize: vertical;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-  }
-  
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #04BF9D;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #04BF9D;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+input[type=submit] {
+  background-color: #04BF9D;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+input[type=submit]:hover {
+  background-color: #03A696;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
   input[type=submit] {
-    background-color: #04BF9D;
-    color: white;
-    padding: 12px 50px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-    
+    width: 100%;
+    margin-top: 0;
   }
-  
-  input[type=submit]:hover {
-    background-color: #03A696;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .col-25 {
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float:left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+}
 
-  /* FIN FORMULARIO */
+/* FIN FORMULARIO */
 
 
-  /* IGNORAR */
-  .card-layout {
-    display: flex;
+/* IGNORAR */
+.card-layout {
+  display: flex;
 
-    /* Put a card in the next row when previous cards take all width */
-    flex-wrap: wrap;
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
 
-    margin-left: -0.25rem;
-    margin-right: -0.25rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
 }
 
 .card-layout__item {
-    /* There will be 3 cards per row */
-    flex-basis: 33.33333%;
-    padding-top: 3rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    text-align: center;
+  /* There will be 3 cards per row */
+  flex-basis: 33.33333%;
+  padding-top: 3rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: center;
 }
-  /* IGNORAR */
 
-    /* Botones */
-        /* Botones 1*/
-    .button {
-        position: relative;
-        background-color: #03A696;
-        border: none;
-        color: #FFFFFF;
-        padding: 10px;
-        width: 200px;
-        text-align: center;
-        transition-duration: 0.4s;
-        text-decoration: none;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 4px;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Titillium Web', sans-serif;
-      }
-      
-      .button:after {
-        content: "";
-        background: #f1f1f1;
-        display: block;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px !important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-      }
-      
-      .button:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s
-      }
+/* IGNORAR */
 
+/* Botones */
+/* Botones 1*/
+.button {
+  position: relative;
+  background-color: #03A696;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
 
-    /* Botones2 */
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 
 
-      .btn {
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 600;
-        color: #ffffff;
-        background-color: #03A696;
-        border-radius: 6px;
-        border: 1.5px solid #253659;
-        cursor: pointer;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Titillium Web', sans-serif;
-      }
-      .btn:hover{
-        color: #03A696;
-        background-color: #ffffff;
-      }
-
-    /* Botones3 */
-
-      .btn3d {
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 5px;
-        border: none;
-        background: #04BF9D ;
-        box-shadow: 0 5px #03A696;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Titillium Web', sans-serif;
-      }
-      .btn3d:hover {
-        box-shadow: 0 3px #03A696;
-        top: 1px;
-      }
-      .btn3d:active {
-        box-shadow: 0 0 #03A696;
-        top: 5px;
-      }
-
-    /* Botones4 */
-
-      .btnslide {
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 5px;
-        z-index: 0;
-        background: #fff;
-        overflow: hidden;
-        border: 2px solid #57cc99;
-        color: #57cc99;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Titillium Web', sans-serif;
-      }
-      .btnslide:hover {
-        color: #fff;
-      }
-      .btnslide:hover:after {
-        height: 100%;
-      }
-      .btnslide:after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        transition: all 0.3s ease;
-        left: 0;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        background: #03A696;
-      }
-
-          /* Botones5 */
+/* Botones2 */
 
 
-      .btnarrow {
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        overflow: hidden;
-        border-radius: 5px;
-        border: none;
-        background-color: #03A696;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Titillium Web', sans-serif;
-      }
-      .btnarrow:hover {
-        border-radius: 5px;
-        padding-right: 24px;
-        padding-left:8px;
-      }
-      .btnarrow:hover:after {
-        opacity: 1;
-        right: 10px;
-      }
-      .btnarrow:after {
-        content: "\00BB";
-        position: absolute;
-        opacity: 0;
-        font-size: 20px;
-        line-height: 40px;
-        top: 0;
-        right: -20px;
-        transition: 0.4s;
-      }
-      
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #03A696;
+  border-radius: 6px;
+  border: 1.5px solid #253659;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btn:hover {
+  color: #03A696;
+  background-color: #ffffff;
+}
+
+/* Botones3 */
+
+.btn3d {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #04BF9D;
+  box-shadow: 0 5px #03A696;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btn3d:hover {
+  box-shadow: 0 3px #03A696;
+  top: 1px;
+}
+
+.btn3d:active {
+  box-shadow: 0 0 #03A696;
+  top: 5px;
+}
+
+/* Botones4 */
+
+.btnslide {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #57cc99;
+  color: #57cc99;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btnslide:hover {
+  color: #fff;
+}
+
+.btnslide:hover:after {
+  height: 100%;
+}
+
+.btnslide:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: #03A696;
+}
+
+/* Botones5 */
+
+
+.btnarrow {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #03A696;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btnarrow:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.btnarrow:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.btnarrow:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
