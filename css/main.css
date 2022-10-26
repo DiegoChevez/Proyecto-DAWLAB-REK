@@ -1,3 +1,5 @@
+@import url(mapa.css);
+@import url(basic.css);
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +10,12 @@ body {
     background: #DFE7F2;
     color: #000;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 
 .contenedor {
     /**Configuracion del contenedor principal y congifuracion de nuestro grid**/
-    width: 90%;
+    width: 95%;
     max-width: 1500px;
     min-width: 700px;
     margin: 10px auto;
@@ -23,6 +26,22 @@ body {
 
     grid-template-areas: "header header header"
         "contenido contenido contenido"
+        "footer footer footer";
+}
+.contenedor .departamentos {
+    /**Configuracion del contenedor principal y congifuracion de nuestro grid**/
+    width: 95%;
+    max-width: 1500px;
+    min-width: 700px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header",
+        "contenido contenido sidebar",
+        ".widget-1 .widget-2 "
         "footer footer footer";
 }
 
@@ -140,7 +159,6 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
     display: inline-block;
     background: #12203E;
     margin: 0 5px;
@@ -187,7 +205,7 @@ nav ul li:hover>ul {
 nav ul ul li {
     position: relative;
     margin: 0px;
-    width: 150px;
+    width: 180px;
     float: none;
     display: list-item;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -200,7 +218,7 @@ nav ul ul li a {
 nav ul ul ul li {
     position: relative;
     top: -60px;
-    left: 150px;
+    left: 180px;
 }
 
 .show,
