@@ -56,6 +56,7 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+   
   }
   
   .col-25 {
@@ -277,4 +278,31 @@
         right: -20px;
         transition: 0.4s;
       }
+
+#uno{
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  background-color: #cacaca;
+}
       
+.table{
+  position: absolute;
+  border-radius: 5px;
+  background-color: #cacaca;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-spacing: 50px;
+}
+
+#body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: #e9e9e9;
+  padding: 100px 50px 500px 70px;
+}

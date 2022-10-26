@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="prueba.css">
-    <title>Pruebas</title>
+    <link rel="stylesheet" href="prueba/css.css">
+    <title>Formulario Contacto</title>
 </head>
 <body>
-<h1>Formularios</h1>
-<!-- Inicio de formulario-->
+<h1 style="text-align: center;">Formulario</h1>
+
 <div class="container">
     <form action="#">
     <div class="row">
@@ -48,47 +48,16 @@
         <label for="">Comentario</label>
       </div>
       <div class="col-75">
-        <textarea id="" name="comentario" placeholder="Redacte su comentario" style="height:200px"></textarea>
+        <textarea id="" name="comentario" placeholder="Redacte su comentario" style="height:200px" required></textarea>
       </div>
     </div>
     <br>
     <div class="row">
-      <input type="submit" value="Enviar">
+      <input type="submit" class="btn3d" id="boton" value="Enviar">
     </div>
     </form>
   </div>
-<!-- Fin de formulario-->
 
-  <hr>
-
-  <h1>Botones</h1>
-
-  <button class="button">Prueba</button>
-
-  <button class="btn">Prueba</button>
-
-<button class="btn3d">prueba</button>
-
-<button class="btnslide">prueba</button>
-
-<button class="btnarrow">prueba</button>
-
-
-
-  <hr>
-
-  <h1>Paleta de colores</h1>
-
-  <div class="card-layout">
-    <!-- A card with given width -->
-    <div class="card-layout__item" style="background-color:#253659 ; color: white;">#253659</div>
-    <div class="card-layout__item" style="background-color:#03A696 ;">#03A696</div>
-    <div class="card-layout__item" style="background-color:#04BF9D ;">#04BF9D</div>
-    <div class="card-layout__item" style="background-color:#F27457 ;">#F27457</div>
-    <div class="card-layout__item" style="background-color:#BF665E ;">#BF665E</div>
-</div>
-
-
-
+  <script src="js/registro.js"></script>
 </body>
 </html>
