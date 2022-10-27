@@ -20,7 +20,6 @@ function ocultar_menu(){
 }
 
 
-
 function mostrarAhuachapan(){
     const $CardAhuachapan = document.querySelector(".Ahuachapan");
     $CardAhuachapan.style.setProperty("visibility","visible");
