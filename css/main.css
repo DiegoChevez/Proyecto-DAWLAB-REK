@@ -1,5 +1,6 @@
 @import url(mapa.css);
 @import url(basic.css);
+@import url(responsive.css);
 * {
     margin: 0;
     padding: 0;
@@ -11,125 +12,6 @@ body {
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-}
-
-.contenedor {
-    /**Configuracion del contenedor principal y congifuracion de nuestro grid**/
-    width: 95%;
-    max-width: 1500px;
-    min-width: 700px;
-    margin: 10px auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-
-    grid-template-areas: "header header header"
-        "contenido contenido contenido"
-        "footer footer footer";
-}
-.contenedor .departamentos {
-    /**Configuracion del contenedor principal y congifuracion de nuestro grid**/
-    width: 95%;
-    max-width: 1500px;
-    min-width: 700px;
-    margin: 10px auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-
-    grid-template-areas: "header header header",
-        "contenido contenido sidebar",
-        ".widget-1 .widget-2 "
-        "footer footer footer";
-}
-
-.contenedor>div,
-.contenedor .header,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .footer {
-    /**Configuracion basica de aspecto en los contenedores hijos**/
-    background: #fff;
-    border-radius: 4px;
-    padding: 2px 10px;
-}
-
-.contenedor .header {
-    /**Configuracion Basica de aspecto y relacion grid -- HEADER**/
-    background: #12203E;
-    color: #fff;
-    grid-area: header;
-}
-
-.contenedor .contenido {
-    /**Configuracion Basica de aspecto y relacion grid -- Contenido**/
-    grid-area: contenido;
-}
-
-.contenedor .sidebar {
-    /**Configuracion Basica de aspecto y relacion grid -- Sidebar**/
-    grid-column: 3 / 4;
-    background: #ffffff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-    grid-area: sidebar;
-}
-
-.contenedor .widget-1,
-.contenedor .widget-2 {
-    /**Configuracion Basica de aspecto -- BOXS RESPONSIVE 1 y 2**/
-    background: #ffffff;
-    color: black;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    min-height: 500px;
-}
-
-.contenedor .widget-1 {
-    /**Confi Relacion Grid**/
-    grid-area: widget-1;
-}
-
-.contenedor .widget-2 {
-    /**Confi Relacion Grid**/
-    grid-area: widget-2;
-}
-
-.contenedor .widget-3 {
-    /**Configuracion Basica de aspecto y relacion grid -- BOXS RESPONSIVE 3**/
-    grid-area: widget-3;
-    background: #ffffff;
-    color: black;
-    height: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
-
-.contenedor .footer {
-    /**Configuracion Basica de aspecto y relacion grid -- FOOTER 3**/
-    background: #12203E;
-    color: #fff;
-    grid-area: footer;
-}
-
-@media screen and (max-width: 768px) {
-
-    /**Configuracion de los limites del visor**/
-    .contenedor {
-        /**Confi. de organizacion de las nuevas medidas**/
-        grid-template-areas: "header header header"
-            "contenido contenido contenido"
-            "footer footer footer";
-    }
 }
 
 /*************************************/

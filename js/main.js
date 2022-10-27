@@ -57,3 +57,93 @@ function ocultarLibertad(){
     $CardLibertad.style.setProperty("visibility","hidden");
 }
 
+function mostrarPaz(){
+    const $CardPaz = document.querySelector(".Paz");
+    $CardPaz.style.setProperty("visibility","visible");
+}
+function ocultarPaz(){
+    const $CardPaz = document.querySelector(".Paz");
+    $CardPaz.style.setProperty("visibility","hidden");
+}
+
+function mostrarSonsonate(){
+    const $CardSonsonate = document.querySelector(".Sonsonate");
+    $CardSonsonate.style.setProperty("visibility","visible");
+}
+function ocultarSonsonate(){
+    const $CardSonsonate = document.querySelector(".Sonsonate");
+    $CardSonsonate.style.setProperty("visibility","hidden");
+}
+
+function mostrarSalvador(){
+    const $CardSalvador = document.querySelector(".Salvador");
+    $CardSalvador.style.setProperty("visibility","visible");
+}
+function ocultarSalvador(){
+    const $CardSalvador = document.querySelector(".Salvador");
+    $CardSalvador.style.setProperty("visibility","hidden");
+}
+
+function mostrarUnión(){
+    const $CardUnión = document.querySelector(".Unión");
+    $CardUnión.style.setProperty("visibility","visible");
+}
+function ocultarUnión(){
+    const $CardUnión = document.querySelector(".Unión");
+    $CardUnión.style.setProperty("visibility","hidden");
+}
+
+function mostrarMorazán(){
+    const $CardMorazán = document.querySelector(".Morazán");
+    $CardMorazán.style.setProperty("visibility","visible");
+}
+function ocultarMorazán(){
+    const $CardMorazán = document.querySelector(".Morazán");
+    $CardMorazán.style.setProperty("visibility","hidden");
+}
+
+function mostrarMiguel(){
+    const $CardMiguel = document.querySelector(".Miguel");
+    $CardMiguel.style.setProperty("visibility","visible");
+}
+function ocultarMiguel(){
+    const $CardMiguel = document.querySelector(".Miguel");
+    $CardMiguel.style.setProperty("visibility","hidden");
+}
+
+function mostrarUsulután(){
+    const $CardUsulután = document.querySelector(".Usulután");
+    $CardUsulután.style.setProperty("visibility","visible");
+}
+function ocultarUsulután(){
+    const $CardUsulután = document.querySelector(".Usulután");
+    $CardUsulután.style.setProperty("visibility","hidden");
+}
+
+function mostrarChalatenango(){
+    const $CardChalatenango = document.querySelector(".Chalatenango");
+    $CardChalatenango.style.setProperty("visibility","visible");
+}
+function ocultarChalatenango(){
+    const $CardChalatenango = document.querySelector(".Chalatenango");
+    $CardChalatenango.style.setProperty("visibility","hidden");
+}
+
+function mostrarVicente(){
+    const $CardVicente = document.querySelector(".Vicente");
+    $CardVicente.style.setProperty("visibility","visible");
+}
+function ocultarVicente(){
+    const $CardVicente = document.querySelector(".Vicente");
+    $CardVicente.style.setProperty("visibility","hidden");
+}
+
+function mostrarSantaAna(){
+    const $CardSantaAna = document.querySelector(".SantaAna");
+    $CardSantaAna.style.setProperty("visibility","visible");
+}
+function ocultarSantaAna(){
+    const $CardSantaAna = document.querySelector(".SantaAna");
+    $CardSantaAna.style.setProperty("visibility","hidden");
+}
+

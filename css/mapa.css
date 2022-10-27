@@ -42,6 +42,7 @@
 }
 .contenedor-img-card img{
     width: 100%;
+    padding: 5px 3px;
 }
 .contenedor-infor-card{
     grid-area: caja-info;
