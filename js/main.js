@@ -146,3 +146,21 @@ function ocultarSantaAna(){
     $CardSantaAna.style.setProperty("visibility","hidden");
 }
 
+
+
+//Configuraciond de Informacion de Departamentos
+const $sliderAhuachapan = document.querySelector("#Ahuachapan");
+const $infoAhuachapan = document.querySelector("#info-Ahuachapan");
+const $mapaAhuachapan = document.querySelector("#mapa-Ahuachapan");
+const $imgAhuachapan = document.querySelector("#img-Ahuachapan");
+
+function DepAhuachapan(){
+    $sliderAhuachapan.style.setProperty("display","block");
+    $infoAhuachapan.style.setProperty("display","block");
+    $mapaAhuachapan.style.setProperty("display","block");
+    $imgAhuachapan.style.setProperty("display","block");
+
+    location.href("/Depa.html")
+}
+
+

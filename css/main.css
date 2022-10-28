@@ -223,6 +223,8 @@ p {
     font-weight: 500;
 }
 
+
+
 /********************************/
 /**** Estilizado del FOOTER  ****/
 /*******************************/
@@ -295,6 +297,8 @@ p {
     }
 }
 
+
+
 /************************************/
 /**** Estilizado del Contactos  ****/
 /***********************************/
@@ -319,6 +323,9 @@ p {
     position: absolute;
     opacity: 0.5;
 }
+
+
+
 
 /***********************************/
 /**** Estilizado del Nosotros  ****/
@@ -393,4 +400,237 @@ p {
     color: white;
     box-shadow: inset 13em 0 0 0 #54b3d6;
 
+}
+
+
+
+/****************************************/
+/**** Estilizado del Departamentos  ****/
+/***************************************/
+
+/**SLIDER BANNER**/
+.DepaContainer .widget-3 {
+    position: relative;
+}
+.DepaContainer .widget-1,
+.DepaContainer .widget-2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.DepaContainer .widget-1 img,
+.DepaContainer .widget-2 img {
+    width: 100%;
+}
+
+.txt-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 99;
+}
+.slider-banner {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-banner::before{
+    content: "";
+    width: 98.6%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0.7;
+    overflow: hidden;
+    z-index: 9;
+}
+.slider-banner ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: linear;
+}
+.slider-banner li {
+    width: 100%;
+    list-style: none;
+}
+.slider-banner li img {
+    width: 100%;
+    height: auto;
+}
+@supports (object-fit: cover) {
+    .slider-banner img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/**** Configuracion Visibilidad del Departamentos  ****/
+
+/**Sliders**/
+.DepaContainer .widget-3 #Ahuachapan,
+.DepaContainer .widget-3 #Cabañas,
+.DepaContainer .widget-3 #Libertad,
+.DepaContainer .widget-3 #Paz,
+.DepaContainer .widget-3 #Sonsonate,
+.DepaContainer .widget-3 #Salvador,
+.DepaContainer .widget-3 #Union,
+.DepaContainer .widget-3 #Morazan,
+.DepaContainer .widget-3 #Miguel,
+.DepaContainer .widget-3 #Vicente,
+.DepaContainer .widget-3 #Chalatenango,
+.DepaContainer .widget-3 #SantaAna,
+.DepaContainer .widget-3 #Cuscatlan,
+.DepaContainer .widget-3 #Usualutan
+{
+    display: none;
+}
+
+/**Informacion**/
+.DepaContainer .contenido #info-Ahuachapan,
+.DepaContainer .contenido #info-Cabañas,
+.DepaContainer .contenido #info-Libertad,
+.DepaContainer .contenido #info-Paz,
+.DepaContainer .contenido #info-Sonsonate,
+.DepaContainer .contenido #info-Salvador,
+.DepaContainer .contenido #info-Union,
+.DepaContainer .contenido #info-Morazan,
+.DepaContainer .contenido #info-Miguel,
+.DepaContainer .contenido #info-Vicente,
+.DepaContainer .contenido #info-Chalatenango,
+.DepaContainer .contenido #info-SantaAna,
+.DepaContainer .contenido #info-Cuscatlan,
+.DepaContainer .contenido #info-Usualutan
+{
+    display: none;
+}
+/**IMG MAPA DE DEPARTAMENTO**/
+.DepaContainer .widget-2 #mapa-Ahuachapan,
+.DepaContainer .widget-2 #mapa-Cabañas,
+.DepaContainer .widget-2 #mapa-Libertad,
+.DepaContainer .widget-2 #mapa-Paz,
+.DepaContainer .widget-2 #mapa-Sonsonate,
+.DepaContainer .widget-2 #mapa-Salvador,
+.DepaContainer .widget-2 #mapa-Union,
+.DepaContainer .widget-2 #mapa-Morazan,
+.DepaContainer .widget-2 #mapa-Miguel,
+.DepaContainer .widget-2 #mapa-Vicente,
+.DepaContainer .widget-2 #mapa-Chalatenango,
+.DepaContainer .widget-2 #mapa-SantaAna,
+.DepaContainer .widget-2 #mapa-Cuscatlan,
+.DepaContainer .widget-2 #mapa-Usualutan
+{
+    display: none;
+}
+.DepaContainer .widget-1 #img-Ahuachapan,
+.DepaContainer .widget-1 #img-Cabañas,
+.DepaContainer .widget-1 #img-Libertad,
+.DepaContainer .widget-1 #img-Paz,
+.DepaContainer .widget-1 #img-Sonsonate,
+.DepaContainer .widget-1 #img-Salvador,
+.DepaContainer .widget-1 #img-Union,
+.DepaContainer .widget-1 #img-Morazan,
+.DepaContainer .widget-1 #img-Miguel,
+.DepaContainer .widget-1 #img-Vicente,
+.DepaContainer .widget-1 #img-Chalatenango,
+.DepaContainer .widget-1 #img-SantaAna,
+.DepaContainer .widget-1 #img-Cuscatlan,
+.DepaContainer .widget-1 #img-Usualutan
+{
+    display: none;
+}
+
+
+
+
+
+
+/*********************************/
+/**** Estilizado del Objetos  ****/
+/********************************/
+
+/**Slider Dinamico**/
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-cards .card{
+    padding: 5px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-cards .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-cards .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container-cards .card h4{
+    font-weight: 600;
+}
+
+.container-cards .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-cards .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
 }
