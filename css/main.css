@@ -524,8 +524,26 @@ p {
 {
     display: none;
 }
+.DepaContainer .widget-3 #Ahuachapan-text,
+.DepaContainer .widget-3 #Cabañas-text,
+.DepaContainer .widget-3 #Libertad-text,
+.DepaContainer .widget-3 #Paz-text,
+.DepaContainer .widget-3 #Sonsonate-text,
+.DepaContainer .widget-3 #Salvador-text,
+.DepaContainer .widget-3 #Union-text,
+.DepaContainer .widget-3 #Morazan-text,
+.DepaContainer .widget-3 #Miguel-text,
+.DepaContainer .widget-3 #Vicente-text,
+.DepaContainer .widget-3 #Chalatenango-text,
+.DepaContainer .widget-3 #SantaAna-text,
+.DepaContainer .widget-3 #Cuscatlan-text,
+.DepaContainer .widget-3 #Usualutan-text
+{
+    display: none;
+}
 
 /**Informacion**/
+.DepaContainer .contenido #info-Ahuachapan,
 .DepaContainer .contenido #info-Ahuachapan,
 .DepaContainer .contenido #info-Cabañas,
 .DepaContainer .contenido #info-Libertad,
@@ -543,6 +561,7 @@ p {
 {
     display: none;
 }
+
 /**IMG MAPA DE DEPARTAMENTO**/
 .DepaContainer .widget-2 #mapa-Ahuachapan,
 .DepaContainer .widget-2 #mapa-Cabañas,
@@ -561,6 +580,7 @@ p {
 {
     display: none;
 }
+
 .DepaContainer .widget-1 #img-Ahuachapan,
 .DepaContainer .widget-1 #img-Cabañas,
 .DepaContainer .widget-1 #img-Libertad,
