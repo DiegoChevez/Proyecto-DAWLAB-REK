@@ -27,7 +27,7 @@
 .ContactosContainer{
     grid-template-areas: "header header header"
     "contenido contenido contenido"
-    "widget-2 widget-2 widget-2"
+    "sidebar sidebar sidebar"
     "footer footer footer";
 }
 .DepaContainer{

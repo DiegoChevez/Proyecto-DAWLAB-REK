@@ -2,43 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Don Bosco</title>
 
     <!--LINKEO DE FUENTE DE GOOGLE-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <!--LINKEO DE CSS-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+
     <!--LINKEO DE FONT-AWESOME-->
     <script src="https://kit.fontawesome.com/0fc218370a.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
     <div class="ContactosContainer">
-
         <header class="header" id="home">
             <nav>
                 <div class="logo">MERCS</div>
                 <label for="btn" class="icon">
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <input type="checkbox" id="btn">
+                <input type="checkbox" id="btn" />
                 <ul>
-                    <li><a href="#">inicio</a></li>
+                    <li><a href="Index.html">inicio</a></li>
                     <li>
                         <label for="btn-2" class="show">Departamentos +</label>
                         <a href="#">Departamentos</a>
-                        <input type="checkbox" id="btn-2">
+                        <input type="checkbox" id="btn-2" />
                         <ul>
                             <li>
                                 <label for="btn-3" class="show">Central</label>
                                 <a href="#">Central <span class="fa fa-plus"></span></a>
-                                <input type="checkbox" id="btn-3">
+                                <input type="checkbox" id="btn-3" />
                                 <ul>
                                     <li><a href="Departamentos.html">La Libertad</a></li>
                                     <li><a href="Departamentos.html">Chalatenango</a></li>
@@ -49,7 +48,7 @@
                             <li>
                                 <label for="btn-3" class="show">Paracentral</label>
                                 <a href="#">Paracentral <span class="fa fa-plus"></span></a>
-                                <input type="checkbox" id="btn-3">
+                                <input type="checkbox" id="btn-3" />
                                 <ul>
                                     <li><a href="Departamentos.html">La Paz</a></li>
                                     <li><a href="Departamentos.html">Cabañas</a></li>
@@ -59,7 +58,7 @@
                             <li>
                                 <label for="btn-3" class="show">Oriental</label>
                                 <a href="#">Oriental <span class="fa fa-plus"></span></a>
-                                <input type="checkbox" id="btn-3">
+                                <input type="checkbox" id="btn-3" />
                                 <ul>
                                     <li><a href="Departamentos.html">Usulután</a></li>
                                     <li><a href="Departamentos.html">San Miguel</a></li>
@@ -70,7 +69,7 @@
                             <li>
                                 <label for="btn-3" class="show">Occidental</label>
                                 <a href="#">Occidental <span class="fa fa-plus"></span></a>
-                                <input type="checkbox" id="btn-3">
+                                <input type="checkbox" id="btn-3" />
                                 <ul>
                                     <li><a href="Departamentos.html">Santa Ana</a></li>
                                     <li><a href="Departamentos.html">Ahuachapan</a></li>
@@ -80,37 +79,84 @@
                         </ul>
                     </li>
                     <li><a href="#">Contactos</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="creadores.html">Nosotros</a></li>
                 </ul>
             </nav>
             <script>
-                $('.icon').click(function () {
-                    $('span').toggleClass("cancel");
+                $(".icon").click(function () {
+                    $("span").toggleClass("cancel");
                 });
             </script>
-
         </header>
 
         <main class="contenido">
+
+            <div class="txtcontainer">
+                <h1>Contactanos</h1>
+                <h3>¿Tienes Consultas o Dudas?</h3>
+                <h4>Realiza tus consultas en el siguiente formulario</h4> 
+                <br>
+                <h3>¿Quieres mayor informacion o Asesoramiento Personal?</h3>
+                <h4>Contactanos Personalmente</h4>
+                <h3><a href="#">+503 2525 5555</a></h3>
+            </div>
+
+
         </main>
 
-        <div class="widget-2">
-        </div>
+        <aside class="sidebar" id="imgfondo">
+            <div class="container-form">
+                <div class="formulario">
+                    <form action="">
+                        <label class="formtitles" for="fname">Nombre completo</label>
+                        <input type="text" id="fname" name="nombre" placeholder="Ingresa tu nombre completo" required />
+
+                        <label class="formtitles" for="lname">Correo electronico</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ingresa tu correo electronico" />
+
+                        <label class="formtitles" for="paises">País</label>
+                        <select id="paises" name="country">
+                            <option value="elsalvador">El Salvador</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="belice">Belice</option>
+                            <option value="costarica">Costa Rica</option>
+                            <option value="panama">Panamá</option>
+                            <option value="nicaragua">Nicaragua</option>
+                        </select>
+                        <label for="" class="formtitles">Comentario</label>
+                        <textarea id="" name="comentario" placeholder="Redacte su comentario..." style="height: 100px"
+                            required></textarea>
+
+                        <input type="submit" class="btn3d" id="boton" value="Enviar" />
+                    </form>
+                </div>
+            </div>
+        </aside>
 
         <footer class="footer">
-            <br>
+            <br />
             <div class="contenedor-redes">
                 <ul>
-                    <li class="btn-facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="btn-instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="btn-twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="btn-linkedIn"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li class="btn-youtube"><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="btn-facebook">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="btn-instagram">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="btn-twitter">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="btn-linkedIn">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="btn-youtube">
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
                 </ul>
             </div>
-            <br>
+            <br />
             <p>©Universidad Don Bosco</p>
-            <br>
+            <br />
         </footer>
     </div>
 
