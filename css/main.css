@@ -7,9 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    background: #DFE7F2;
+    background: #f1f1f1;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -20,13 +19,11 @@ body {
 /*************************************/
 /**** Estilizado del NAV, HEADER ****/
 /************************************/
-
 nav:after {
     content: '';
     clear: both;
     display: table;
 }
-
 nav .logo {
     float: left;
     color: white;
@@ -35,20 +32,17 @@ nav .logo {
     line-height: 70px;
     padding-left: 60px;
 }
-
 nav ul {
     float: right;
     margin-right: 40px;
     list-style: none;
     position: relative;
 }
-
 nav ul li {
     display: inline-block;
     background: #12203E;
     margin: 0 5px;
 }
-
 nav ul li a {
     color: white;
     line-height: 70px;
@@ -56,18 +50,15 @@ nav ul li a {
     font-size: 18px;
     padding: 8px 15px;
 }
-
 nav ul li a:hover {
     color: cyan;
     border-radius: 5px;
     box-shadow: 0 0 5px #33ffff,
         0 0 10px #66ffff;
 }
-
 nav ul ul li a:hover {
     box-shadow: none;
 }
-
 nav ul ul {
     position: absolute;
     top: 90px;
@@ -77,17 +68,14 @@ nav ul ul {
     transition: top .3s;
     z-index: 999;
 }
-
 nav ul ul ul {
     border-top: none;
 }
-
 nav ul li:hover>ul {
     top: 70px;
     opacity: 1;
     visibility: visible;
 }
-
 nav ul ul li {
     position: relative;
     margin: 0px;
@@ -96,28 +84,23 @@ nav ul ul li {
     display: list-item;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-
 nav ul ul li a {
     line-height: 50px;
 }
-
 nav ul ul ul li {
     position: relative;
     top: -60px;
     left: 180px;
 }
-
 .show,
 .icon,
 input {
     display: none;
 }
-
 .fa-plus {
     font-size: 15px;
     margin-left: 40px;
 }
-
 @media all and (max-width: 968px) {
     nav ul {
         margin-right: 0px;
@@ -202,7 +185,6 @@ input {
         content: '\f00d';
     }
 }
-
 .content {
     z-index: -1;
     position: absolute;
@@ -211,13 +193,11 @@ input {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 header {
     font-size: 35px;
     font-weight: 600;
     padding: 10px 0;
 }
-
 p {
     font-size: 30px;
     font-weight: 500;
@@ -231,14 +211,12 @@ p {
 .footer {
     text-align: center;
 }
-
 .contenedor-redes ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .contenedor-redes ul li {
     width: 50px;
     height: 50px;
@@ -254,48 +232,42 @@ p {
     justify-content: center;
     align-items: center;
 }
-
 .contenedor-redes ul li i {
     color: white;
     transition: all 0.5s ease;
 }
-
 .contenedor-redes ul li:hover.btn-facebook {
     border: 5px solid #0439D9;
     box-shadow: 0 0 15px #0439D9;
     transition: 0.5s all ease;
     color: #0439D9;
 }
-
 .contenedor-redes ul li:hover.btn-twitter {
     border: 5px solid #2793F2;
     box-shadow: 0 0 15px #2793F2;
     transition: 0.5s all ease;
 }
-
 .contenedor-redes ul li:hover.btn-instagram {
     border: 5px solid #FF19EF;
     box-shadow: 0 0 15px #FF19EF;
     transition: 0.5s all ease;
 }
-
 .contenedor-redes ul li:hover.btn-linkedIn {
     border: 5px solid #04C4D9;
     box-shadow: 0 0 15px #04C4D9;
     transition: 0.5s all ease;
 }
-
 .contenedor-redes ul li:hover.btn-youtube {
     border: 5px solid #D90404;
     box-shadow: 0 0 15px #D90404;
     transition: 0.5s all ease;
 }
-
 @media screen and (max-width: 768px) {
     .contenedor-redes ul li .btn-linkedIn {
         margin-left: 60px;
     }
 }
+
 
 
 
@@ -314,7 +286,6 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
 .txtcontainer::before {
     content: "";
     width: 100%;
@@ -334,7 +305,6 @@ p {
     width: 30%;
     padding: 1.5rem;
 }
-
 .progradiv {
     border: solid 3px #000;
     margin: 0.5em;
@@ -342,15 +312,10 @@ p {
     /* Animation */
     height: 25%;
     display: flex;
-
 }
-
 .progradiv:hover {
-
     transform: scale(1.04);
-
 }
-
 #Diego {
     font-size: 50px;
     padding-right: 4%;
@@ -360,13 +325,10 @@ p {
     position: static;
 
 }
-
 #Diego:hover {
     color: white;
     box-shadow: inset 13em 0 0 0 #54b3d6;
-
 }
-
 #Erick {
     font-size: 50px;
     padding-right: 7%;
@@ -376,16 +338,12 @@ p {
     transition: background-size 350ms;
     --bg-h: 100%;
     position: static;
-
 }
-
 #Erick:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
     color: white;
-
 }
-
 #Bryan {
     font-size: 50px;
     padding-right: 3%;
@@ -393,14 +351,13 @@ p {
     float: right;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     position: static;
-
 }
-
 #Bryan:hover {
     color: white;
     box-shadow: inset 13em 0 0 0 #54b3d6;
 
 }
+
 
 
 
@@ -423,7 +380,6 @@ p {
 .DepaContainer .widget-2 img {
     width: 100%;
 }
-
 .txt-slider {
     position: absolute;
     top: 50%;
@@ -520,10 +476,10 @@ p {
 .DepaContainer .widget-3 #Chalatenango,
 .DepaContainer .widget-3 #SantaAna,
 .DepaContainer .widget-3 #Cuscatlan,
-.DepaContainer .widget-3 #Usualutan
-{
+.DepaContainer .widget-3 #Usualutan{
     display: none;
 }
+
 .DepaContainer .widget-3 #Ahuachapan-text,
 .DepaContainer .widget-3 #Cabañas-text,
 .DepaContainer .widget-3 #Libertad-text,
@@ -537,9 +493,9 @@ p {
 .DepaContainer .widget-3 #Chalatenango-text,
 .DepaContainer .widget-3 #SantaAna-text,
 .DepaContainer .widget-3 #Cuscatlan-text,
-.DepaContainer .widget-3 #Usualutan-text
-{
+.DepaContainer .widget-3 #Usualutan-text{
     display: none;
+    text-transform: uppercase;
 }
 
 /**Informacion**/
@@ -557,8 +513,7 @@ p {
 .DepaContainer .contenido #info-Chalatenango,
 .DepaContainer .contenido #info-SantaAna,
 .DepaContainer .contenido #info-Cuscatlan,
-.DepaContainer .contenido #info-Usualutan
-{
+.DepaContainer .contenido #info-Usualutan{
     display: none;
 }
 
@@ -576,8 +531,7 @@ p {
 .DepaContainer .widget-2 #mapa-Chalatenango,
 .DepaContainer .widget-2 #mapa-SantaAna,
 .DepaContainer .widget-2 #mapa-Cuscatlan,
-.DepaContainer .widget-2 #mapa-Usualutan
-{
+.DepaContainer .widget-2 #mapa-Usualutan{
     display: none;
 }
 
@@ -594,14 +548,18 @@ p {
 .DepaContainer .widget-1 #img-Chalatenango,
 .DepaContainer .widget-1 #img-SantaAna,
 .DepaContainer .widget-1 #img-Cuscatlan,
-.DepaContainer .widget-1 #img-Usualutan
-{
+.DepaContainer .widget-1 #img-Usualutan{
     display: none;
 }
-
-
-
-
+.contenedor-Importante-depa{
+    background-color: rgba(122, 180, 215, 0.573);
+    text-align: center;
+    border-radius: 10px;
+    border: #3498db solid;
+    padding: 10px 60px;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 /*********************************/

@@ -19,19 +19,12 @@
     box-sizing: border-box;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    display:flex;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: 1, auto;
-    grid-template-areas:"caja-img caja-info";
+    top: 50%;
 
     border: #B5B6BA solid 3px;
     background-color: #F1F0F2;
-
     visibility: hidden;
 }
 .contenedor-img-card{
@@ -39,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 .contenedor-img-card img{
     width: 100%;
@@ -47,4 +41,6 @@
 .contenedor-infor-card{
     grid-area: caja-info;
     text-align: center;
+    width: 50%;
 }
+

@@ -10,6 +10,7 @@
 
     <!--LINKEO DE FUENTE DE GOOGLE-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    
     <!--LINKEO DE CSS-->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/basic.css" />
@@ -94,7 +95,7 @@
             <div class="txtcontainer">
                 <h1>Contactanos</h1>
                 <h3>¿Tienes Consultas o Dudas?</h3>
-                <h4>Realiza tus consultas en el siguiente formulario</h4> 
+                <h4>Realiza tus consultas en el siguiente formulario</h4>
                 <br>
                 <h3>¿Quieres mayor informacion o Asesoramiento Personal?</h3>
                 <h4>Contactanos Personalmente</h4>
@@ -109,10 +110,11 @@
                 <div class="formulario">
                     <form action="">
                         <label class="formtitles" for="fname">Nombre completo</label>
-                        <input type="text" id="fname" name="nombre" placeholder="Ingresa tu nombre completo" required />
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo"
+                            required />
 
                         <label class="formtitles" for="lname">Correo electronico</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Ingresa tu correo electronico" />
+                        <input type="text" id="email" name="lastname" placeholder="Ingresa tu correo electronico" />
 
                         <label class="formtitles" for="paises">País</label>
                         <select id="paises" name="country">
@@ -124,29 +126,38 @@
                             <option value="nicaragua">Nicaragua</option>
                         </select>
                         <label for="" class="formtitles">Comentario</label>
-                        <textarea id="" name="comentario" placeholder="Redacte su comentario..." style="height: 100px"
-                            required></textarea>
+                        <textarea id="comentario" name="comentario" placeholder="Redacte su comentario..."
+                            style="height: 100px" required></textarea>
 
-                        <input type="submit" class="btn3d" id="boton" value="Enviar" />
-                        <a href="registrocontacto.html" class="btn3d">Ver Comentario</a>
-                        
+                        <button id="save" class="btn3d">Guardar</button>
+                        <!-- <input type="submit" class="btn3d" id="boton" value="Enviar" /> -->
+
                     </form>
-                    <table id="tablaregistro" style="border-spacing: 30px;"> 
-                        <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Correo</th>
-                            <th>País</th>
-                            <th>Comentario</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </aside>
+
+        <div class="widget-1">
+            <center>
+                <h1 class="titulo1">Comentarios</h1>
+            </center>
+
+            <table class="table table-striped" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Comentario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+
+        </div>
 
         <footer class="footer">
             <br />
@@ -175,11 +186,49 @@
         </footer>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+
+        function informacion(nombre, correo, comentario) {
+            this.nombre = nombre;
+            this.correo = correo;
+            this.comentario = comentario;
+        }
+
+        $('#save').click(function () {
+            $("#dataTable").find('tbody')
+                .append($('<tr>')
+                    .append($('<td>')
+                        .text($('#nombre').val()))
+                    .append($('<td>')
+                        .text($('#email').val()))
+                    .append($('<td>')
+                        .text($('#comentario').val()))
+                );
+
+            $('#nombre').val('');
+            $('#email').val('');
+            $('#comentario').val('');
+
+            var arr = [];
+            $("#dataTable").find('tbody tr').each(function (index, item) {
+
+                var nombre = $(item).find('td').eq(0).text();
+                var email = $(item).find('td').eq(1).text();
+                var comentario = $(item).find('td').eq(2).text();
+                arr.push(new informacion(nombre, email, comentario))
+            });
+
+            localStorage.setItem("memberData", arr);
+        })
+    </script>
+
     <!-- Configuracion JS -->
     <script src="js/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/mostrarregistro.js"></script>
-    <script src="/js/registrocontacto.js"></script>
 </body>
 
 </html>
