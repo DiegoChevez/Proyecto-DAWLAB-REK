@@ -31,13 +31,10 @@ switch (departamento) {
         DepMiguel();
     break;
     case "Morazan":
-        depMo();
+        DepMorazan();
     break;
-    case "SanMiguel":
-        DepMiguel();
-    break;
-    case "SanMiguel":
-        DepMiguel();
+    case "Usulutan":
+        DepUsualutan();
     break;
     case "Ahuachapan":
         DepAhuachapan();
