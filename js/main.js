@@ -31,13 +31,10 @@ switch (departamento) {
         DepMiguel();
     break;
     case "Morazan":
-        depMo();
+        DepMorazan();
     break;
-    case "SanMiguel":
-        DepMiguel();
-    break;
-    case "SanMiguel":
-        DepMiguel();
+    case "Usulutan":
+        DepUsualutan();
     break;
     case "Ahuachapan":
         DepAhuachapan();
@@ -612,6 +609,17 @@ function ocultarSantaAna(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 function mostrarInfoAhuchapan(){
     const $modalA = document.querySelector(".ModalAhuachapan");
     $modalA.style.setProperty("display","block");
@@ -761,6 +769,8 @@ function ocultar_menu(){
     nav.style.right = "-250px";
     background_menu.style.display = "none";
 }
+
+
 
 
 

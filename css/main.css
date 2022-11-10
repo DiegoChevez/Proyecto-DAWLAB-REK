@@ -269,16 +269,34 @@ p {
 }
 
 
+/********************************/
+/**** ESTILO DE PÁGINA NOSOTROS****/
+/*******************************/
 
+.programadoresimg{
+   width: 30%;
+    padding: 1.5rem;
+}
+
+.progradiv{
+    border: solid 3px #000;
+    margin: 0.5em;
+    transition: transform .2s; /* Animation */
+    height: 25%;
+    display: flex;
+
+}
 
 /************************************/
 /**** Estilizado del Contactos  ****/
 /***********************************/
+
 .txtcontainer {
     background-image: url("../img/paisaje.jpg");
     background-size: cover;
     width: 100%;
-    height: 150px;
+    height: auto;
+    padding: 2%;
     position: relative;
 
     justify-content: center;
@@ -295,6 +313,10 @@ p {
     opacity: 0.5;
 }
 
+.txtcontainer h1, h2, h3, h4{
+    position: relative;
+}
+
 
 
 
@@ -306,7 +328,7 @@ p {
     padding: 1.5rem;
 }
 .progradiv {
-    border: solid 3px #000;
+    border: solid 3px rgba(255, 255, 255, 0.185);
     margin: 0.5em;
     transition: transform .2s;
     /* Animation */
@@ -314,48 +336,59 @@ p {
     display: flex;
 }
 .progradiv:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 #Diego {
-    font-size: 50px;
-    padding-right: 4%;
-    margin-top: 19%;
-    float: right;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    position: static;
-
-}
-#Diego:hover {
     color: white;
-    box-shadow: inset 13em 0 0 0 #54b3d6;
-}
-#Erick {
     font-size: 50px;
     padding-right: 7%;
     margin-top: 15%;
     float: right;
-    background: linear-gradient(0deg, #54b3d6, #54b3d6) no-repeat right bottom / 0 var(--bg-h);
+    background: linear-gradient(0deg, rgba(0, 26, 83, 0.288), rgba(0, 26, 83, 0.438)) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 100%;
     position: static;
+    text-decoration:none;
+
 }
-#Erick:where(:hover, :focus-visible) {
+#Diego:hover {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+}
+#Erick {
+    color: white;
+    font-size: 50px;
+    padding-right: 7%;
+    margin-top: 15%;
+    float: right;
+    background: linear-gradient(0deg, rgba(0, 26, 83, 0.288), rgba(0, 26, 83, 0.438)) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    position: static;
+    text-decoration:none;
+}
+#Erick:hover {
     background-size: 100% var(--bg-h);
     background-position-x: left;
     color: white;
 }
 #Bryan {
+    color: white;
     font-size: 50px;
-    padding-right: 3%;
+    padding-right: 7%;
     margin-top: 15%;
     float: right;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    background: linear-gradient(0deg, rgba(0, 26, 83, 0.288), rgba(0, 26, 83, 0.438)) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
     position: static;
+    text-decoration:none;
 }
 #Bryan:hover {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
     color: white;
-    box-shadow: inset 13em 0 0 0 #54b3d6;
-
 }
 
 
@@ -552,10 +585,10 @@ p {
     display: none;
 }
 .contenedor-Importante-depa{
-    background-color: rgba(122, 180, 215, 0.573);
+    background-color: rgba(122, 179, 215, 0.541);
     text-align: center;
     border-radius: 10px;
-    border: #3498db solid;
+    border: #1072b3 solid;
     padding: 10px 60px;
     width: 80%;
     margin: 0 auto;
@@ -611,4 +644,8 @@ p {
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
+}
+
+#asideSalvador{
+    background-image: url(../img/Salvadordelmundo.png);
 }
